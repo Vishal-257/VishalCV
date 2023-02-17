@@ -16,6 +16,10 @@ h1{
 p{
     font-family: sans-serif;
 }
+.mountain{
+    height: 50%;
+    width: 50%;
+}
 .cloud2{
     position: absolute;
     left: 300px;
