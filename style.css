@@ -4,9 +4,12 @@ body{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 .top_container{
-    background-color: #E4F9F5;
+    background-color: #020E2F;
     position: relative;
     padding: 100px;
+}
+p{
+    color: #fff;
 }
 h1{
     margin: 50px auto 0 auto;
@@ -39,9 +42,115 @@ h3{
 .social{
     height: 30px;
     width: 30px;
+    transition: all 0.4s;
+    padding-right: 10px;
 }
 .photo{
     height: 200px;
     width: 200px;
     border-radius: 100%;
+}
+.search-box{
+    width:150px;
+    position: relative;
+    display: flex;
+    bottom:0;
+    left:0;
+    right:0;
+    margin:auto;
+  }
+  .search-input{
+    width:100%;
+    font-size:16px;
+    padding: 7px 25px 7px 7px;
+    background-color: #eaeaeb;
+    color: #6c6c6c;
+    border-radius: 6px;
+    border:none;
+    transition: all .4s;
+  }
+  .search-btn{
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    padding: 6px 9px;
+    margin-left: -45px;
+    color:6c6c6c;
+    transition: all .4s;
+    z-index: 10;
+  }
+  .search-btn:hover{
+    transform: scale(0.75);
+    cursor: pointer;
+    color: black;
+  }
+  .search-icon{
+    width: 25px;
+}
+header{
+    margin: 0;
+    padding:0 ;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+body{
+    background: #020E2F;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding:15px 50px;
+    display: flex;
+    justify-content:space-between ;
+    align-items: center;
+    z-index: 100;
+    background: black;
+}
+.logo{
+    transition: all .4s;
+}
+.logo:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.navigation a{
+    position: relative;
+    text-decoration: none;
+    color: #359381;
+    padding: 6px 15px;
+    border-radius: 20px;
+    margin: 0 20px;
+    font-weight: 600;
+    transition: all .4s;
+    z-index: 1;
+}
+.navigation a.active{
+    background:#359381 ;
+    color: #fff;
+}
+.navigation a:hover{
+    background:#359381 ;
+    color: #fff;
+    cursor: pointer;
+    transform: scale(1.3);
+}
+nav .animation{
+    position: absolute;
+    height:5px;
+    bottom: 0;
+    z-index: 0;
+    background: #1abc9c;
+    border-radius: 8px;
+    transition: all .5s ease 0s;
+}
+.logo{
+    width: 100px;
+}
+.social:hover{
+    cursor: pointer;
+    transform: scale(1.3);
 }
