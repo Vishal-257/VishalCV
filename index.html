@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Vishal</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="WhatsApp Image 2023-06-15 at 14.20.41.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,34 +15,47 @@
 
 <body>
   <header>
-    <img class="logo" src="WhatsApp Image 2023-06-16 at 18.53_edited.jpg" alt="VSlogo">
+    <img class="logo" src="png/logo-no-background.png" alt="VSlogo">
     <nav class="navigation">
-      <a href="#" class="active">Home</a>
-      <a href="#">About</a>
-      <a href="#">Skills</a>
-      <a href="#">Contact</a>
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
       <div class="animation start-home"></div>
     </nav>
   </header>
-  <div class="top_container">
+  <section id="home">
+    <div class="top_container">
     <h1><em>I am Vishal</em> </h1>
     <h2>I am a web developer.</h2>
   </div>
-
-  <div class="middle-container">
-    <div class="profile">
-      <img class="photo" src="man.png" alt="">
-      <h2>Hello.</h2>
-      <p>I am Vishal, a 2nd year computer science engineering student at VIT vellore with specialization in Data
-        Science.</p>
+  </section>
+  
+  <section id="about">
+    <div class="middle-container">
+      <div class="profile">
+        <img class="photo" src="man.png" alt="">
+        <h2>Hello.</h2>
+        <p>I am Vishal, a 2nd year computer science engineering student at VIT vellore with specialization in Data
+          Science.</p>
+      </div>
     </div>
-    <hr>
+  </section>
+  <hr>
+
+  <section id="skills">
     <div class="skills">
       <h2>My Skills.</h2>
       <div class="skill-row">
         <img class="image" src="https://cdn-icons-png.flaticon.com/512/2881/2881142.png" alt="computer image">
         <h3>Languages</h3>
         <p>I am skilled in Python, Java, C++ and C.</p>
+        <img class="skill-img" src="https://cdn-icons-png.flaticon.com/128/5968/5968350.png" alt="">
+        <img class="skill-img" src="https://cdn-icons-png.flaticon.com/128/226/226777.png" alt="">
+        <img class="skill-img" src="https://cdn-icons-png.flaticon.com/128/6132/6132222.png" alt="">
+        <img class="skill-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/C_Programming_Language.svg/1200px-C_Programming_Language.svg.png" alt="">
+        <img class="skill-img" src="https://cdn-icons-png.flaticon.com/128/5968/5968267.png" alt="">
+        <img class="skill-img" src="https://cdn-icons-png.flaticon.com/128/5968/5968242.png" alt="">
       </div>
       <div class="skill-row">
         <img class="image" src="https://cdn-icons-png.flaticon.com/512/2888/2888407.png" alt="computer image">
@@ -50,8 +63,14 @@
         <p>I am a biginner level web developer. Skilled in frontend web developement and currently working on backend
           web developement on Udemy.</p>
       </div>
+      <div>
+        <a class="cvdown" href="#">Download CV</a>
+      </div>
     </div>
-    <hr>
+  </section>
+  <hr>
+
+  <section id="contact">
     <div class="contact-me">
       <h2>Get In Touch</h2>
       <h3>Please contanct for any further queries or help. </h3>
@@ -65,8 +84,9 @@
       <a class="btn" href="https://www.instagram.com/_vishal_kumar_257/"><img class="social"
           src="https://cdn-icons-png.flaticon.com/128/3670/3670274.png" alt=""></a>
     </div>
-  </div>
+  </section>
 
+  <script src="script.js"></script>
 
   <div class="bottom-container">
     <p>© Vishal Kumar Yadav.</p>
